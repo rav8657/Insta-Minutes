@@ -58,7 +58,7 @@
 ```
 
 # Learning-:
-* Learn about new package node-scheduler and its implementation
+* Learn about new package node-scheduler and its implementation.
 
- - Sample output
+ # Sample output
  ![A output collection sample](assets/output.jpg)
