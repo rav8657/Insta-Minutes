@@ -5,7 +5,7 @@
 * JAVASCRIPT
 * NodeJS
 
-# Approch -:
+# Approch
 1. From npmjs download the node-scheduler.
 2. Create a file called items, which have list of events in a format of 
 
@@ -57,7 +57,7 @@
 
 ```
 
-# Learning-:
+# Learning
 * Learn about new package node-scheduler and its implementation.
 
  # Sample output
