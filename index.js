@@ -1,7 +1,5 @@
 const schedule = require('node-schedule');
 const { events } = require('./items');
-//* setting Time delay for each item in the array of events 
-const timeDelay = time => new Promise(resolve => setTimeout(resolve, time));
 
 
 //* Reverse Strings should be called after the events are scheduled.
@@ -11,13 +9,13 @@ function reverseString(str) {
 // console.log(reverseString('hello'))
 
 
-//* Run the function for each item in the array of events 
+//* Run the function for each item in the array of events after 7seconds.
 function scheduleItems(el) {
-    const job = schedule.scheduleJob(`*/${el.text.length} * * * * *`, async () => {
-        job.cancel();
-        await timeDelay(el.text.length * 1000).then(() => {
-            console.log(reverseString(el.text))
-        })
+    const job = schedule.scheduleJob(`*/7 * * * * *`, () => {
+
+        job.cancel(); //* Cancel the job after it has been run.
+        
+        console.log(reverseString(el.text))
     })
 }
 
